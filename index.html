@@ -10,27 +10,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .form-input {
-            @apply w-full p-4 rounded-xl border border-gray-700 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300;
-        }
-        .form-label {
-            @apply flex items-center space-x-3 text-gray-400;
-        }
-        /* Custom typing effect for the title text */
-        .typing-cursor {
-            border-right: 2px solid;
-            animation: blink 0.75s step-end infinite;
-        }
-        @keyframes blink {
-            from, to { border-color: transparent }
-            50% { border-color: #FFD700 }
-        }
-    </style>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        border: 1px solid #374151;
+        background-color: #1f2933;
+        color: #ffffff;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+        border-color: #facc15;
+        box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.4);
+    }
+
+    .typing-cursor {
+        border-right: 2px solid #FFD700;
+        animation: blink 0.75s step-end infinite;
+    }
+
+    @keyframes blink {
+        from, to { border-color: transparent; }
+        50% { border-color: #FFD700; }
+    }
+</style>
 </head>
 <body class="bg-gray-900 text-gray-100">
     <!-- Fixed Navigation Bar -->
@@ -130,7 +141,7 @@
   problem-solving abilities, and practical development skills through hands-on
   learning and projects.
 </p>
-                            <a href="atharv rudrawar 2.pdf" class="inline-block bg-yellow-400 hover:bg-yellow-500 transition-colors duration-300 text-gray-900 font-semibold py-3 px-6 rounded-full text-lg shadow-md">
+                            <a href="atharv-rudrawar-resume.pdf" class="inline-block bg-yellow-400 hover:bg-yellow-500 transition-colors duration-300 text-gray-900 font-semibold py-3 px-6 rounded-full text-lg shadow-md">
                                 Resume <i class="fas fa-angle-right ml-2"></i>
                             </a>
                         </div>
@@ -431,7 +442,7 @@
                 <!-- Project 4: UrbanHeatAI -->
                 <div class="bg-gray-800 p-4 rounded-3xl border border-gray-700 shadow-sm flex flex-col transition-transform transform hover:scale-105">
                     <img src="Career-compass_images.JPG" alt="UrbanHeatAI project graphic" class="rounded-2xl mb-4 w-full h-auto">
-                    <h3 class="text-2xl font-bold mb-2 text-yellow-400">UrbanHeatAI</h3>
+                    <h3 class="text-2xl font-bold mb-2 text-yellow-400">Career Compass</h3>
                     <p class="text-gray-400 text-sm mb-4 flex-grow">
                         Career Compass is a web-based platform built using HTML, CSS, and JavaScript that helps users explore career paths and improve their resumes. It integrates an AI-powered resume builder workflow using n8n and provides ATS resume score analysis to help candidates optimize their resumes for better job matching.
                     </p>
@@ -445,9 +456,11 @@
                         <a href="https://github.com/Atharv28112004" class="inline-block bg-yellow-400 hover:bg-yellow-500 transition-colors duration-300 text-gray-900 font-semibold py-2 px-4 rounded-full text-sm">
                             <i class="fab fa-github mr-2"></i>GitHub
                         </a>
-                        <a href="https://atharv28112004.github.io/Career-Compass/" class="inline-block bg-gray-700 hover:bg-gray-600 transition-colors duration-300 text-gray-200 font-semibold py-2 px-4 rounded-full text-sm">
-                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
-                        </a>
+                        <a href="https://atharv28112004.github.io/Career-Compass/"
+                              target="_blank"
+                            class="inline-block bg-gray-700 hover:bg-gray-600 transition-colors duration-300 text-gray-200 font-semibold py-2 px-4 rounded-full text-sm">
+                              <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                          </a>
                     </div>
                 </div>
             </div>
@@ -533,7 +546,7 @@
 
         <!-- Footer -->
         <footer class="text-center text-gray-500 text-sm mt-10">
-            <p>&copy; 2024 Aditya Petewar. All rights reserved.</p>
+            <p>&copy; 2024 Atharv Rudrawar. All rights reserved.</p>
         </footer>
     </div>
     <script>
